@@ -1,0 +1,52 @@
+@import '../../sassStyles/_colors';
+.header {
+  //border: 2px solid red;
+  height: 150px;
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border: 2px solid yellow;
+    height: 100%;
+  }
+  &__nav__ul {
+  //  margin-top: 100px;
+    position: relative;
+    //border: 2px solid red;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__nav__ul--li {
+    list-style: none;
+    margin-right: 45px;
+    position: relative;
+    z-index: 300;
+  //  border: 2px solid yellow;
+  }
+  &__nav__ul--a {
+    text-decoration: none;
+    color: $White;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .svg{
+    position: absolute;
+    margin: 40px 60px 0 20px;
+    width: 900px;
+  }
+  &__nav__ul--img{
+    width: 620px;
+    margin: 0;
+  //position: absolute;
+    padding: 0;
+    border: 2px solid red;
+    top: 5%;
+    left: 27%;
+    //right: 50%;
+
+    height: 100px;
+  }
+
+}

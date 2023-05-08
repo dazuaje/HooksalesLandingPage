@@ -1,0 +1,31 @@
+@import "../../sassStyles/_colors";
+@import "../../sassStyles/_mixins";
+@import "../../sassStyles/_font";
+
+.home__container {
+  position: relative;
+  height: 75vh;
+  //border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &--title {
+    font-size: 100px;
+    letter-spacing: -7px;
+    color: $White;
+    font-family: "GothamBold", sans-serif;
+    font-weight: bolder;
+  }
+  &--highlight {
+    color: $LightBlue;
+  }
+  &--p {
+    color: $White;
+    margin: 40px 0;
+    width: 700px;
+    font-size: 18px;
+    text-align: center;
+  }
+}

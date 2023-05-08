@@ -1,0 +1,122 @@
+@import "../../sassStyles/_colors";
+@import "../../sassStyles/_mixins";
+@import "../../sassStyles/_font";
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap");
+.features__container {
+  //border: 5px solid yellow;
+  height: 100vh;
+  @include FlexboxCenter();
+  flex-direction: column;
+  &--title {
+    font-family: "GothanLight", sans-serif;
+    font-size: 40px;
+    color: $LightBlue;
+    text-align: center;
+  }
+  &--p {
+    color: $White;
+    text-align: center;
+    width: 450px;
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  &__miniContainer {
+     //   border: 2px solid yellow;
+    @include FlexboxCenter();
+    height: 60%;
+  }
+  //LEFT
+  &__leftFeatures {
+   // border: 2px solid red;
+    width: 500px;
+    //height: 100%;
+  }
+  &__leftFeatures__number__container {
+    // border: 2px solid #fff;
+    display: flex;
+    margin: 40px 0;
+    align-items: center;
+    justify-content: right;
+  }
+  &__leftFeatures--number {
+    color: $White;
+    font-size: 40px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background-color: $LightBlue;
+  }
+
+  &__leftFeatures--numberText {
+    color: $White;
+    width: 250px;
+   // border: 2px solid red;
+    margin-top: 13px;
+    text-align: right;
+    margin-right: 20px;
+    font-family: "Archivo", sans-serif;
+  }
+
+  //Order of numbers
+  &--right {
+    order: 0;
+  }
+  &--left {
+    order: 1;
+  }
+
+  //RIGHT
+
+  &__rightFeatures {
+    //border: 2px solid red;
+    width: 500px;
+  }
+  &__rightFeatures__number__container {
+    display: flex;
+    //    margin: 20px 0;
+    margin: 40px 0;
+    align-items: center;
+    justify-content: left;
+  }
+
+  &__rightFeatures--number {
+    color: $White;
+    font-size: 40px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+
+    background-color: $LightBlue;
+  }
+  &__rightFeatures--numberText {
+    color: $White;
+    width: 250px;
+    //border: 2px solid #fff;
+    margin-left: 20px;
+    margin-top: 13px;
+
+    text-align: left;
+
+    font-family: "Archivo", sans-serif;
+  }
+  &__image {
+    background-color: #fff;
+    margin: 0px 70px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    height: 300px;
+  }
+
+  &--image {
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+    //border: 2px solid yellow;
+  }
+  &--button {
+    text-align: center;
+    margin: 10px auto;
+  }
+}

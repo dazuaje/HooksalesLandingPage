@@ -1,0 +1,38 @@
+.step-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .step-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 10px;
+  }
+  
+  .step-line {
+    height: 2px;
+    width: 100%;
+    background-color: #bbb;
+    position: absolute;
+    top: 7px;
+    left: -50%;
+    z-index: -1;
+  }
+  h1{
+    text-align: center;
+  }
+  btn{
+    text-align: center;
+  }
+  .step-dot.active {
+    background-color: #007bff;
+  }
+  
+  .step-line.active {
+    background-color: #007bff;
+  }
+  

@@ -1,0 +1,42 @@
+@import "../../sassStyles/_colors";
+@import "../../sassStyles/_mixins";
+@import "../../sassStyles/_font";
+
+.faq__container {
+  position: relative;
+  height: 100vh;
+  @include FlexboxCenter();
+ // border: 5px solid red;
+  &__miniContainer {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+   // border: 2px solid yellow;
+  }
+  &__networkShape{
+    position: absolute;
+    left: 0;
+    bottom: -30%;
+    height: 100vh;
+  }
+  &__left {
+    width: 50%;
+  }
+  &--title {
+    color: $LightBlue;
+    font-family: "GothanLight", sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  &--p {
+    color: $White;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  &--button {
+    color: $White;
+  }
+  &__faq__container {
+    width: 50%;
+  }
+}

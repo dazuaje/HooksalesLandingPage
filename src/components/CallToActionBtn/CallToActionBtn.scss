@@ -1,0 +1,29 @@
+@import "../../sassStyles/_colors";
+@import "../../sassStyles/_mixins";
+a{
+  text-decoration: none
+}
+.callToActionBtn__container {
+  @include FlexboxCenter();
+  width: 190px; //190 Learn more
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  &__content {
+    width: 70%;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  &__icon {
+    border-radius: 50%;
+    width: 25%;
+    height: 88%;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    @include FlexboxCenter();
+  }
+  &--icon {
+    height: 25px;
+    width: 25px;
+  }
+}

@@ -1,0 +1,124 @@
+@import "../../sassStyles/_font";
+@import "../../sassStyles/_colors";
+.component {
+  display: flex;
+  padding-top: 100px;
+  height: 100vh;
+}
+.btn {
+  width: 50%;
+  order: -3;
+  //border: 2px solid blanchedalmond;
+  margin-top: 0em;
+  height: 60vh;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 6em;
+}
+.slider {
+  width: 60%;
+  //border: 2px solid #fff;
+  height: 60vh;
+}
+.slide {
+  height: 330px;
+  width: 500px;
+  margin: 20px 20px;
+  //background-color: red;
+}
+.title {
+  font-size: 60px;
+  font-family: "GothamBold", sans-serif;
+  color: $White;
+  margin-left: 20px;
+  width: 200px;
+  text-align: start;
+  //  border: 2px solid yellow;
+}
+.span {
+  color: $LightBlue;
+}
+.title__container {
+  display: flex;
+  // border: 2px solid red;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 200px;
+}
+.img {
+  width: 200px;
+  position: relative;
+  top: -140%;
+  // border: 2px solid green;
+}
+.arrows {
+  background-color: transparent;
+  border: none;
+  margin: 0 10px;
+}
+.right {
+  transform: scaleX(-1);
+}
+
+//Message cloud
+.cloud__container {
+  width: 450px;
+  height: 300px;
+  margin: auto;
+  padding: 15px;
+  background-color: #fff;
+  position: relative;
+  color: #5b647b;
+  &:after {
+    content: "";
+    display: inline-block;
+    border-style: solid;
+    border-width: 30px 20px 0;
+    border-color: #fff transparent;
+    position: absolute;
+    bottom: -20px;
+
+    left: 20px;
+  }
+  &__mini{
+    //border: 2px solid yellow;
+    width: 400px;
+    margin: 15px auto;
+}
+  &--p{
+      font-size: 15px;
+    }
+    &--iconStar{
+      color: yellow;
+    }
+  &__profileContainer{
+    margin-top: 20px;
+      display: flex;
+      align-items:center;
+      justify-content: left;
+    }
+    
+    &--name{
+        font-size: 18px;
+        color: #003B39;
+        // border: 3px solid red;
+        margin: 0;
+    }
+    &--img{
+      margin-right: 1em;
+      width: 54px;
+      height: 54px;
+    
+
+}
+  &--position{
+    font-size: 15px;
+    //border: 3px solid red;
+    margin: 0;
+    padding: 0;
+    color:#91959F;
+}
+}

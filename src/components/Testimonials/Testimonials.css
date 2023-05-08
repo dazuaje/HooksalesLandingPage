@@ -1,0 +1,12 @@
+.testimonials__container{
+  height: 100vh;
+  /*background-color: yellow;*/
+  position: relative;
+  
+}
+.shapeTestimonial{
+  position: absolute;
+  right: -10%;
+  top: -18%;
+  height: 90vh;
+}

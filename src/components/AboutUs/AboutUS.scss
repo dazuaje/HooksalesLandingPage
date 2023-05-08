@@ -1,0 +1,68 @@
+@import "../../sassStyles/_colors";
+@import "../../sassStyles/_mixins";
+@import "../../sassStyles/_font";
+
+.blue{
+  color: $LightBlue;
+}
+.about__container {
+ // border: 5px solid #fff;
+  height: 100vh;
+  position: relative;
+  @include FlexboxCenter();
+
+  &--shapeAboutUs {
+    position: absolute;
+    height: 120vh;
+    width: 600px;
+    right: -100px;
+  } &--shapeHooks{
+    position: absolute;
+    height: 100vh;
+    left: 5%;
+    transform: scaleX(-1);
+
+  }
+
+  &__mini {
+   // border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 85%;
+  }
+  &__content {
+    width: 50%;
+  //  border: 2px solid yellow;
+  }
+  &__content--subTitle {
+    color: $White;
+    font-size: 20px;
+  }
+  &__content--title {
+    font-family: "GothanLight", sans-serif;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: $LightBlue;
+  }
+  &__content--p {
+    color: $White;
+    line-height: 20px;
+    //text-align: justify;
+   // border: 2px solid red;
+    margin-bottom: 40px;
+  }
+  &__image {
+    width: 50%;
+    //border: 2px solid blue;
+    height: 100%;
+    @include FlexboxCenter();
+    position: relative;
+    z-index: 20;
+  }
+  &--image {
+    width: 350px;
+    height: 450px;
+  }
+}

@@ -1,0 +1,81 @@
+@import "../../sassStyles/_colors";
+@import "../../sassStyles/_mixins";
+
+.footer__container {
+  height: 70vh;
+  color: $White;
+  //border: 2px solid red;
+  z-index: 1;
+  position: relative;
+  @include FlexboxCenter();
+  &--shapeFooter {
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    z-index: -3;
+  }
+  &__miniContainer {
+    //border:2px solid yellow;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  //LOGO CONTAINER
+  &__logo {
+    //    border: 2px solid #fff;
+    width: 33%;
+    @include FlexboxCenter();
+    flex-direction: column;
+  }
+  &--logo {
+    width: 600px;
+    height: 120px;
+  }
+  &--slogan {
+    text-align: center;
+    margin: 0 2rem;
+  }
+  //SITEMAP CONTAINER
+  &__siteMap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 33%;
+    //border: 2px solid;
+    height: 200px;
+  }
+  &--title {
+    font-size: 20px;
+    text-align: left;
+  }
+  &__siteMap__container {
+    column-count: 2;
+  }
+  &__siteMap--li {
+    margin: 0;
+    list-style: none;
+  }
+  &__siteMap--a {
+    text-decoration: none;
+    color: $White;
+    cursor: pointer;
+  }
+  //CONTACTUS CONTAINER
+  &__contactUs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+    justify-content: space-evenly;
+    height: 200px;
+    margin-bottom: 7px;
+    //    border: 2px solid lightgreen;
+  }
+  &__infoContainer{
+    margin: 0;
+
+  }
+  
+}
